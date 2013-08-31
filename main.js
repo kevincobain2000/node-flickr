@@ -4,7 +4,7 @@ module.exports = Flickr;
 
 /*++++++++++++++++++++ Implementation Starts +++++++++++++++++++++++*/
 
-var keys = {"api_key": ""}
+var keys = {"api_key": "045a807d1951e550a2fc44a4654ad9e4"}
 flickr = new Flickr(keys);
 
 
