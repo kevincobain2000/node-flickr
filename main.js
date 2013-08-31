@@ -4,8 +4,8 @@ module.exports = Flickr;
 
 /*++++++++++++++++++++ Implementation Starts +++++++++++++++++++++++*/
 
-var keys = {"api_key": ""}
-flickr = new Flickr(keys);
+//var keys = {"api_key": ""}
+//flickr = new Flickr(keys);
 
 
 
@@ -14,6 +14,6 @@ flickr = new Flickr(keys);
 //    console.log(result);
 //});
 
-flickr.photosSearch({"tags":"cat,dogs"}, function(result){
-    console.log(result.photos);
-});
+//flickr.photosSearch({"tags":"cat,dogs"}, function(result){
+//    console.log(result.photos);
+//});
