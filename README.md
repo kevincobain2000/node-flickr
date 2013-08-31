@@ -1,34 +1,47 @@
-========
-NOT YET
-========
-
-Please see the commits
-
-Plan
------
-
-1. json
-2. tag search
+===================
+Work is in Progress
+===================
 
 Install
 -------
 
 <pre>
-
-npm install node-flickr
+npm install node-flickr //NOT YET AN NPM MODULE
 </pre>
 
-or
-
+Use This⬇
 <pre>
 npm install https://github.com/kevincobain2000/node-flickr/tarball/master
 </pre>
 
-Usage
------
+Doc
+---
+
+**Set Up**
+
 <pre>
 var Flickr = require("node-flickr");
-flickr = new Flickr;
+var keys = {"api_key": "045a807d1951e550a2fc44a4654ad9e4"}
+flickr = new Flickr(keys);
 </pre>
+
+**Methods**
+
+flickr.photos.search
+// http://www.flickr.com/services/api/flickr.photos.search.html
+
+<pre>
+flickr.photosSearch({"tags":"cat,dogs"}, function(result){
+    console.log(result.photos);
+});
+
+flickr.photosSearch({"tags":"cat,dogs","user_id":123456}, function(result){
+    console.log(result.photos);
+});
+
+</pre>
+
+
+
 
 
