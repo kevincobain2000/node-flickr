@@ -1,4 +1,19 @@
 var Flickr = require("./lib/main.js");
 module.exports = Flickr;
 
-//flickr = new Flickr;
+
+/*++++++++++++++++++++ Implementation Starts +++++++++++++++++++++++*/
+
+var keys = {"api_key": "045a807d1951e550a2fc44a4654ad9e4"}
+flickr = new Flickr(keys);
+
+
+
+//flickr.setApi(keys);
+//flickr.getApi(function(result){
+//    console.log(result);
+//});
+
+flickr.photosSearch({"tags":"cat,dogs"}, function(result){
+    console.log(result.photos);
+});
