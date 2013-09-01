@@ -5,7 +5,7 @@ Install
 npm install node-flickr
 </pre>
 
-Or Use This
+ALternatively
 <pre>
 npm install https://github.com/kevincobain2000/node-flickr/tarball/master
 </pre>
@@ -30,11 +30,11 @@ Usage
 [flickr.photos.search]: http://www.flickr.com/services/api/flickr.photos.search.html
 
 <pre>
-flickr.photosSearch({"tags":"cat,dogs"}, function(result){
+flickr.get("photos.search", {"tags":"cat,dogs"}, function(result){
     console.log(result.photos);
 });
 
-flickr.photosSearch({"tags":"cat,dogs","user_id":123456}, function(result){
+flickr.get("photos.search", {"tags":"cat,dogs","user_id":123456}, function(result){
     console.log(result.photos);
 });
 </pre>
