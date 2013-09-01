@@ -27,8 +27,9 @@ flickr = new Flickr(keys);
 
 **Methods**
 
-flickr.photos.search
-// http://www.flickr.com/services/api/flickr.photos.search.html
+- [flickr.photos.search]
+
+[flickr.photos.search]: http://www.flickr.com/services/api/flickr.photos.search.html
 
 <pre>
 flickr.photosSearch({"tags":"cat,dogs"}, function(result){
@@ -38,7 +39,6 @@ flickr.photosSearch({"tags":"cat,dogs"}, function(result){
 flickr.photosSearch({"tags":"cat,dogs","user_id":123456}, function(result){
     console.log(result.photos);
 });
-
 </pre>
 
 
