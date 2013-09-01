@@ -5,7 +5,7 @@ Install
 npm install node-flickr
 </pre>
 
-ALternatively
+ALternatively,
 <pre>
 npm install https://github.com/kevincobain2000/node-flickr/tarball/master
 </pre>
