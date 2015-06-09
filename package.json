@@ -1,6 +1,6 @@
 {
   "name": "node-flickr",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Flickr API Nodejs",
   "main": "main.js",
   "scripts": {
