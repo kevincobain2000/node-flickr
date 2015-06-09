@@ -23,8 +23,6 @@ flickr = new Flickr(keys);
 Usage
 -----
 
-![alt tag](http://www8355ue.sakura.ne.jp/images/node-flickr-photo-search-doc.png)
-
 - [flickr.photos.search]
 
 [flickr.photos.search]: http://www.flickr.com/services/api/flickr.photos.search.html
