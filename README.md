@@ -28,11 +28,13 @@ Usage
 [flickr.photos.search]: http://www.flickr.com/services/api/flickr.photos.search.html
 
 <pre>
-flickr.get("photos.search", {"tags":"cat,dogs"}, function(result){
+flickr.get("photos.search", {"tags":"cat,dogs"}, function(err, result){
+    if (err) return console.error(err);
     console.log(result.photos);
 });
 
-flickr.get("photos.search", {"tags":"cat,dogs","user_id":123456}, function(result){
+flickr.get("photos.search", {"tags":"cat,dogs","user_id":123456}, function(err, result){
+    if (err) return console.error(err);
     console.log(result.photos);
 });
 </pre>
@@ -41,7 +43,8 @@ flickr.get("photos.search", {"tags":"cat,dogs","user_id":123456}, function(resul
 
 http://www.flickr.com/services/api/flickr.photos.getContext.html
 <pre>
-flickr.get("photos.getContext", {"photo_id":9638138263}, function(result){
+flickr.get("photos.getContext", {"photo_id":9638138263}, function(err, result){
+    if (err) return console.error(err);
     console.log(result);
 });
 </pre>
@@ -49,7 +52,8 @@ flickr.get("photos.getContext", {"photo_id":9638138263}, function(result){
 http://www.flickr.com/services/api/flickr.photos.getSizes.html
 
 <pre>
-flickr.get("photos.getSizes", {"photo_id":9638138263}, function(result){
+flickr.get("photos.getSizes", {"photo_id":9638138263}, function(err, result){
+    if (err) return console.error(err);
     console.log(result.sizes);
 });
 </pre>
